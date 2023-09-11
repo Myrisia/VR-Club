@@ -41,6 +41,7 @@ section {
   font-style: normal;
   font-weight: 600;
   line-height: 160%;
+  z-index: 3;
 }
 .header-btn {
   color: #fff;
@@ -516,7 +517,7 @@ section {
 .gallery-navigation {
   display: flex;
   align-items: center;
-  gap: 103px;
+  gap: 12px;
   position: absolute;
   right: 169px;
   bottom: 85px;
@@ -540,4 +541,115 @@ section {
 
 .gallery-swiper {
   position: relative;
+}
+
+.swiper-pagination-current {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+}
+.swiper-pagination-total {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+}
+.swiper-pagination {
+  color: #fff;
+  width: auto;
+  position: static;
+}
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+}
+.contacts-list-item {
+  max-width: 318px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+.contacts-heading {
+  color: #fff;
+  font-family: Dela Gothic One;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 28.32px */
+  text-transform: uppercase;
+}
+.contacts-text {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%; /* 21.24px */
+}
+
+.contacts .wrapper {
+  gap: 47px;
+}
+.footer {
+  width: 100%;
+  height: 111px;
+
+  background: radial-gradient(
+      72.29% 44.07% at 50% 93.92%,
+      #a40a79 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      45.56% 43.91% at 4.78% 4.31%,
+      #008df3 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      67.34% 60.82% at 98.22% 1.22%,
+      #dc18c8 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    rgba(22, 43, 237, 0.5);
+
+  /* Тень */
+  box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+  position: relative;
+}
+.footer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 2;
+}
+.footer-menu {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.footer-menu-link {
+  color: #c7c7c7;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  z-index: 3;
+}
+
+.footer .logo-link {
+  z-index: 3;
 }
